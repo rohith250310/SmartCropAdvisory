@@ -23,15 +23,15 @@ function App() {
   const predictCrop = async () => {
     try {
       const response = await fetch(
-        "https://smartcropadvisory-3y25.onrender.com/recommend_crop",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(form),
-        }
-      );
+  "https://smartcropadvisory-3y25.onrender.com/recommend_crop",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(form),
+  }
+);
 
       const data = await response.json();
 
