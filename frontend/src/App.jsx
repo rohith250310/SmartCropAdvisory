@@ -23,7 +23,7 @@ function App() {
   const predictCrop = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/recommend_crop",
+        "https://smartcropadvisory-3y25.onrender.com/recommend_crop",
         {
           method: "POST",
           headers: {
